@@ -1,0 +1,316 @@
+2020-03-02 21:02:00.295 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:172) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLException: No value specified for parameter 10
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1115) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:151) ~[bin/:?]
+	... 3 more
+2020-03-02 21:02:00.295 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:172) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLException: No value specified for parameter 10
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1115) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:151) ~[bin/:?]
+	... 3 more
+2020-03-02 21:02:00.633 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:02:00.633 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:05:12.841 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:172) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLException: No value specified for parameter 10
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1115) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:151) ~[bin/:?]
+	... 3 more
+2020-03-02 21:05:12.841 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:172) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLException: No value specified for parameter 10
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1115) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:151) ~[bin/:?]
+	... 3 more
+2020-03-02 21:05:12.908 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:05:12.908 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:06:57.849 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:173) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'Apellidos' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:152) ~[bin/:?]
+	... 3 more
+2020-03-02 21:06:57.849 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:173) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'Apellidos' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:152) ~[bin/:?]
+	... 3 more
+2020-03-02 21:06:57.895 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:06:57.895 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:13:19.615 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:173) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:152) ~[bin/:?]
+	... 3 more
+2020-03-02 21:13:19.615 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:173) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:152) ~[bin/:?]
+	... 3 more
+2020-03-02 21:13:19.679 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:13:19.679 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:14:52.519 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:173) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLException: Parameter index out of range (10 > number of parameters, which is 9).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1372) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1385) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:1752) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:148) ~[bin/:?]
+	... 3 more
+2020-03-02 21:14:52.519 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:173) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLException: Parameter index out of range (10 > number of parameters, which is 9).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1372) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1385) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:1752) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:148) ~[bin/:?]
+	... 3 more
+2020-03-02 21:14:52.566 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:14:52.566 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:16:58.040 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:172) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLException: Incorrect integer value: 'eerr 34' for column 'ID_LOCALIDAD' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:151) ~[bin/:?]
+	... 3 more
+2020-03-02 21:16:58.040 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:172) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLException: Incorrect integer value: 'eerr 34' for column 'ID_LOCALIDAD' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:151) ~[bin/:?]
+	... 3 more
+2020-03-02 21:16:58.095 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 21:16:58.095 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 22:31:45.217 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:172) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`evenugo`.`usuario`, CONSTRAINT `fk_Usuario_Sexo1` FOREIGN KEY (`ID_SEXO`) REFERENCES `sexo` (`ID_SEXO`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:151) ~[bin/:?]
+	... 3 more
+2020-03-02 22:31:45.217 ERROR UsuarioServiceTest.createUsuario:58 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:172) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:53) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:73) [bin/:?]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`evenugo`.`usuario`, CONSTRAINT `fk_Usuario_Sexo1` FOREIGN KEY (`ID_SEXO`) REFERENCES `sexo` (`ID_SEXO`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:151) ~[bin/:?]
+	... 3 more
+2020-03-02 22:31:45.309 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 22:31:45.309 INFO  UsuarioServiceTest.createUsuario:60 - Test created finished.
+
+2020-03-02 22:53:31.016 ERROR UsuarioServiceTest.createUsuario:57 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:172) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`evenugo`.`usuario`, CONSTRAINT `fk_Usuario_Sexo1` FOREIGN KEY (`ID_SEXO`) REFERENCES `sexo` (`ID_SEXO`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:151) ~[bin/:?]
+	... 3 more
+2020-03-02 22:53:31.016 ERROR UsuarioServiceTest.createUsuario:57 - null
+com.evenugo.dao.exceptions.DataException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:172) ~[bin/:?]
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:92) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`evenugo`.`usuario`, CONSTRAINT `fk_Usuario_Sexo1` FOREIGN KEY (`ID_SEXO`) REFERENCES `sexo` (`ID_SEXO`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.evenugo.dao.impl.UsuarioDaoImpl.create(UsuarioDaoImpl.java:151) ~[bin/:?]
+	... 3 more
+2020-03-02 22:53:31.250 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-02 22:53:31.250 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-02 23:38:10.199 ERROR UsuarioServiceTest.createUsuario:57 - null
+java.lang.NullPointerException: null
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:93) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+2020-03-02 23:38:10.199 ERROR UsuarioServiceTest.createUsuario:57 - null
+java.lang.NullPointerException: null
+	at com.evenugo.dao.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:93) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+2020-03-02 23:38:10.374 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-02 23:38:10.374 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-02 23:45:52.942 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-02 23:45:52.942 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+

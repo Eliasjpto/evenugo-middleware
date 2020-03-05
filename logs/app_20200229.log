@@ -1,0 +1,18 @@
+2020-02-29 01:46:40.010 FATAL EventoDaoImpl.findByCriteria:143 - llegamos ad
+2020-02-29 01:46:40.010 FATAL EventoDaoImpl.findByCriteria:143 - llegamos ad
+2020-02-29 01:46:40.116 FATAL EventoDaoImpl.findByCriteria:145 - llegamos c
+2020-02-29 01:46:40.116 FATAL EventoDaoImpl.findByCriteria:145 - llegamos c
+2020-02-29 01:46:40.117 INFO  EventoDaoImpl.findByCriteria:156 - resultado de la consulta :null
+2020-02-29 01:46:40.117 INFO  EventoDaoImpl.findByCriteria:156 - resultado de la consulta :null
+2020-02-29 01:46:40.269 FATAL EventoDaoImpl.findByCriteria:180 - llegamos
+2020-02-29 01:46:40.269 FATAL EventoDaoImpl.findByCriteria:180 - llegamos
+2020-02-29 01:46:40.404 FATAL EventoDaoImpl.findByCriteria:199 - no ah ido bien la query :
+2020-02-29 01:46:40.404 FATAL EventoDaoImpl.findByCriteria:199 - no ah ido bien la query :
+2020-02-29 01:49:32.508 FATAL EventoDaoImpl.findByCriteria:143 - llegamos ad
+2020-02-29 01:49:32.508 FATAL EventoDaoImpl.findByCriteria:143 - llegamos ad
+2020-02-29 01:49:32.525 FATAL EventoDaoImpl.findByCriteria:145 - llegamos c
+2020-02-29 01:49:32.525 FATAL EventoDaoImpl.findByCriteria:145 - llegamos c
+2020-02-29 01:49:32.527 INFO  EventoDaoImpl.findByCriteria:156 - resultado de la consulta :null
+2020-02-29 01:49:32.527 INFO  EventoDaoImpl.findByCriteria:156 - resultado de la consulta :null
+2020-02-29 01:49:32.615 FATAL EventoDaoImpl.findByCriteria:180 - llegamos
+2020-02-29 01:49:32.615 FATAL EventoDaoImpl.findByCriteria:180 - llegamos
