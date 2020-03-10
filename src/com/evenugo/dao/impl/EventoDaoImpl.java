@@ -41,7 +41,7 @@ public class EventoDaoImpl implements EventoDao {
 					+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO"
 					+ " INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO" 
 					+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?" ;
-					
+					// ddd
 
 
 			// en sql puedo sacar evento 1 sin haberlo creado
