@@ -6,8 +6,8 @@ import java.util.List;
 import com.evenugo.dao.PaisDao;
 import com.evenugo.dao.exceptions.DataException;
 import com.evenugo.dao.impl.PaisDaoImpl;
-import com.evenugo.dao.service.PaisService;
-import com.evenugo.dao.service.impl.PaisServiceImpl;
+import com.evenugo.service.PaisService;
+import com.evenugo.service.impl.PaisServiceImpl;
 import com.evenugo.model.Pais;
 
 public class PaisServiceTest {

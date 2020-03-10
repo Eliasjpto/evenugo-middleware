@@ -1,11 +1,11 @@
 package com.evenugo.service.test;
 
 import com.evenugo.dao.exceptions.DataException;
-import com.evenugo.dao.service.EventoService;
-import com.evenugo.dao.service.PaisService;
-import com.evenugo.dao.service.UsuarioService;
-import com.evenugo.dao.service.impl.PaisServiceImpl;
-import com.evenugo.dao.service.impl.UsuarioServiceImpl;
+import com.evenugo.service.EventoService;
+import com.evenugo.service.PaisService;
+import com.evenugo.service.UsuarioService;
+import com.evenugo.service.impl.PaisServiceImpl;
+import com.evenugo.service.impl.UsuarioServiceImpl;
 import com.evenugo.exceptions.MailException;
 import com.evenugo.model.Pais;
 import com.evenugo.model.Usuario;
@@ -37,21 +37,21 @@ public class UsuarioServiceTest {
 	
 		UsuarioService s = new UsuarioServiceImpl();
 		Usuario a = new Usuario();
-		String plainPassword = "chantada";
+		String plainPassword = "chahhyntadino";
 		a.setNombre("elias");
 		a.setApellidos("tetoros");
-		a.setDireccion("lombardo 1");
-		a.setEmail("jpsmra2018@gmail.com");
-		a.setFechaNacimiento(new Date(1996-05-12));
-		a.setLocalidad(5);
+		a.setDireccion("lepanto");
+		a.setEmail("pineiro520@gmail.com");
+		a.setFechaNacimiento(new Date(1996-05-19));
+		a.setLocalidad(2);
 		a.setPassword(PasswordEncryptionUtil.encryptPassword(plainPassword));
-		a.setTelefono("123445555");
+		a.setTelefono("12344445");
 		a.setSexo("M");
 		try {
 
 			a = s.create(a);
 
-	//		logger.info("Created: " + ToStringUtil.toString(u));
+	//		logger. info("Created: " + ToStringUtil.toString(u));
 
 		} catch (Throwable t) {
 			logger.error(t.getMessage(), t);

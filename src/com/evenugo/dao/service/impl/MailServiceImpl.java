@@ -44,13 +44,11 @@ public class MailServiceImpl implements MailService {
 			email.setFrom("jpsmra2018@gmail.com");			
 			email.setSubject("subject");
 			email.setMsg("message");
-		email.addTo("jpsmra2018@gmail.com");
+		email.addTo(to);
 			email.send();
 		} catch (EmailException e) {
 			// TODO: Logger
-		throw new MailException ("Trying to send email "
-					
-					 , e);
+		throw new MailException ("Trying to send email ", e);
 
 		}
 	}

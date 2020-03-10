@@ -1,4 +1,4 @@
-package com.evenugo.dao.service;
+package com.evenugo.service;
 
 import java.sql.Connection;
 import java.util.List;
@@ -6,7 +6,6 @@ import com.evenugo.dao.*;
 import com.evenugo.dao.impl.*;
 import com.evenugo.dao.exceptions.DataException;
 import com.evenugo.model.Pais;
-import com.evenugo.model.Provincia;
 
 public interface PaisService {
 
@@ -15,5 +14,4 @@ public interface PaisService {
 
  	public  Pais findByPK(Long PK)
 			throws DataException;
- 	public List <Provincia> findByNombre (String nombre) throws DataException;
 }

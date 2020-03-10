@@ -1,12 +1,10 @@
 package com.evenugo.service.test;
 import java.util.List;
 import com.evenugo.dao.exceptions.DataException;
-import com.evenugo.dao.service.EventoService;
-import com.evenugo.dao.service.impl.EventoServiceImpl;
+import com.evenugo.service.EventoService;
+import com.evenugo.service.impl.EventoServiceImpl;
 import com.evenugo.model.Evento;
 import com.evenugo.model.criteria.EventoCriteria;
-
-import java.util.Calendar;
 import java.util.Date;
 public class EventoServiceTest {
 	
@@ -56,14 +54,10 @@ public class EventoServiceTest {
 
 	public void testFindByFechaDesde() throws DataException {
 		EventoCriteria c = new EventoCriteria();
-
-//		Calendar desde = Calendar.getInstance();
-	//	desde.set(calendar.YEAR, 2019);
-		
-		
-		Date fechaDesde = new Date (2019,6,1);
-		c.setFechaDesde(fechaDesde);
-		
+		java.util.Date e = new java.util.Date();
+		java.sql.Date i = new java.sql.Date((2019-02-01));
+		e =i ;
+		c.setFechaDesde(e);
 	
 		 	
 		
@@ -75,7 +69,9 @@ public class EventoServiceTest {
 	public void testFindByFechaHasta() throws DataException {
 		EventoCriteria c = new EventoCriteria();
 		
-		Date u = new java.util.Date();
+		java.util.Date u = new java.util.Date();
+		java.sql.Date p = new java.sql.Date((2018-02-01));
+		u =p ;
 		c.setFechaHasta(u);
 		List<Evento>results = eventoService.findByCriteria(c, "ESP");	
 		for (Evento ee: results) {
@@ -89,10 +85,10 @@ public class EventoServiceTest {
 		// TODO Auto-generated method stub
 		try {
 		EventoServiceTest test = new EventoServiceTest();
-	// test.testFind();
+	test.testFindById();
 //		test.testFindByLocalidad();
- // test.testFindByNombre();
-		test.testFindByFechaDesde();  
+  // ntest.testFindByNombre();
+	//	test.testFindByFechaHasta();  
 	//	test.testFindByTipo();
 	} catch (DataException de) {
 			de.printStackTrace();

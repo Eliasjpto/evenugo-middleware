@@ -1,0 +1,28 @@
+2020-03-07 22:14:30.826 ERROR UsuarioServiceTest.createUsuario:57 - null
+java.lang.NullPointerException: null
+	at com.evenugo.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:93) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+2020-03-07 22:14:30.826 ERROR UsuarioServiceTest.createUsuario:57 - null
+java.lang.NullPointerException: null
+	at com.evenugo.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:93) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+2020-03-07 22:14:30.921 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-07 22:14:30.921 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-07 22:40:41.675 ERROR UsuarioServiceTest.createUsuario:57 - null
+java.lang.NullPointerException: null
+	at com.evenugo.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:93) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+2020-03-07 22:40:41.675 ERROR UsuarioServiceTest.createUsuario:57 - null
+java.lang.NullPointerException: null
+	at com.evenugo.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:93) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+2020-03-07 22:40:41.815 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-07 22:40:41.815 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+

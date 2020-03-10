@@ -36,10 +36,12 @@ public class EventoDaoImpl implements EventoDao {
 			cn = DBUtils.conectar();
 
 
-			query = "select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA"
+			query = "select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,avg(v.PUNTUACION) "
 					+ " from evento e" 
 					+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO"
-					+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?";
+					+ " INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO" 
+					+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?" ;
+					
 
 
 			// en sql puedo sacar evento 1 sin haberlo creado
@@ -79,7 +81,7 @@ public class EventoDaoImpl implements EventoDao {
 			cn = DBUtils.conectar();
 
 
-			query = "select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA"
+			query = "select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,v.PUNTUACION"
 					+ " from evento e" 
 					+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO"
 					+ " where ei.NOMBRE like ? and ei.ID_IDIOMA = ?";
@@ -125,7 +127,7 @@ public class EventoDaoImpl implements EventoDao {
 		try {
 			//Crear una sentencia SQL y Meter en rs el resultado de la query.
 			StringBuilder sb = new StringBuilder(
-					"select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v. "
+					"select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v.PUNTUACION "
 							+ " from evento e "
 							+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO "
 					);
@@ -133,67 +135,66 @@ public class EventoDaoImpl implements EventoDao {
 			if (c.getIdTipoEvento()!=null) {				
 				sb.append(" INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO ");				
 			}
-			//						if (c.getValoracionMin()!=null) {				
-			//							sb.append(" AND v.PUNTUACION = ? ");	 	// 		left outerjoin 
-			//						}
-			// mirar que me salga valoracion yen  id y en criteria  busqueda por id y la valoracion  añadir en la busqueda por  añadir sacar valoracion 
+					if (c.getValoracionMin()!=null) {				
+						sb.append(" AND v.PUNTUACION = ? ");	 	// 		left outerjoin 
+					}
 
 
 			boolean first = true;
 			first = SQLUtils.addClause(c.getIdLocalidad(), sb, first," e.ID_LOCALIDAD = ? "
 					);  logger.fatal("llegamos ad");
 					first = SQLUtils.addClause(c.getNombre(), sb, first, " UPPER(ei.NOMBRE) LIKE UPPER (?) ");
-					logger.fatal("llegamos c");
-					first = SQLUtils.addClause(c.getFechaDesde(), sb, first,"e.FECHA_HORA  > ? ");
-					first = SQLUtils.addClause(c.getFechaHasta(), sb, first,"e.FECHA_HORA  < ? ");
-					first = SQLUtils.addClause(c.getIdTipoEvento(), sb, first," te.ID_TIPO_EVENTO = ? ");
+					 logger.fatal("llegamos c");
+						first = SQLUtils.addClause(c.getFechaDesde(), sb, first,"e.FECHA_HORA  > ? ");
+						first = SQLUtils.addClause(c.getFechaHasta(), sb, first,"e.FECHA_HORA  < ? ");
+			first = SQLUtils.addClause(c.getIdTipoEvento(), sb, first," te.ID_TIPO_EVENTO = ? ");
 
-					if (c.getValoracionMin()!=null) {			
-						sb.append(" GROUP BY e.ID_EVENTO ");
-						sb.append(" HAVING AVG(P.VALORACION) > ? "
-								+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?" );
+						if (c.getValoracionMin()!=null) {			
+							sb.append(" GROUP BY e.ID_EVENTO ");
+							sb.append(" HAVING AVG(P.VALORACION) > ? "
+				 + " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?" );
 					}
+			
+			query = sb.toString();
+			logger.info("resultado de la consulta :" +query );
 
-					query = sb.toString();
-					logger.info("resultado de la consulta :" +query );
 
+			preparedStatement = cn.prepareStatement(query);
 
-					preparedStatement = cn.prepareStatement(query);
+			int i = 1;
 
-					int i = 1;
-
-					if (c.getIdLocalidad()!=null) {		
-						//		//		andlocalidad takata 
-						preparedStatement.setLong(i++, c.getIdLocalidad());
-					}
-
-					if (c.getFechaDesde()!=null) {
+			if (c.getIdLocalidad()!=null) {		
+				//		//		andlocalidad takata 
+				preparedStatement.setLong(i++, c.getIdLocalidad());
+			}
+					
+						if (c.getFechaDesde()!=null) {
 						preparedStatement.setDate(i++, new java.sql.Date(c.getFechaDesde().getTime()));
 					}
-					////
+			////
 					if (c.getFechaHasta()!=null) {
-						preparedStatement.setDate(i++, new java.sql.Date(c.getFechaHasta().getTime()));
-					}
-					//////
-					if (c.getNombre()!=null) {	
-						preparedStatement.setString(i++, "%"+c.getNombre()+"%");
-						logger.fatal("llegamos");
-					}
-					if (c.getIdTipoEvento()!=null) {			
-						preparedStatement.setLong(i++, c.getIdTipoEvento());
-					}
+							preparedStatement.setDate(i++, new java.sql.Date(c.getFechaHasta().getTime()));
+						}
+						//////
+						if (c.getNombre()!=null) {	
+							preparedStatement.setString(i++, "%"+c.getNombre()+"%");
+							 logger.fatal("llegamos");
+				}
+			if (c.getIdTipoEvento()!=null) {			
+				preparedStatement.setLong(i++, c.getIdTipoEvento());
+			}
 
 
-					if (c.getValoracionMin()!=null) {	
-						preparedStatement.setInt(i++, c.getValoracionMin());
-					}
+								if (c.getValoracionMin()!=null) {	
+										preparedStatement.setInt(i++, c.getValoracionMin());
+								}
 
-					rs = preparedStatement.executeQuery();
-					////
-					////
-					while (rs.next()) {
-						eventos.add(loadNext (rs));
-					}
+			rs = preparedStatement.executeQuery();
+			////
+			////
+			while (rs.next()) {
+				eventos.add(loadNext (rs));
+			}
 		} catch (SQLException e) {
 
 			logger.fatal("no ah ido bien la query :" );
@@ -201,7 +202,7 @@ public class EventoDaoImpl implements EventoDao {
 		}
 		return eventos;
 	}	
-
+	
 	protected Evento loadNext(ResultSet rs)
 			throws SQLException,DataException {	
 		int i = 1;

@@ -1,18 +1,16 @@
-package com.evenugo.dao.service.impl;
+package com.evenugo.service.impl;
 import java.sql.Connection;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 import com.evenugo.dao.PaisDao;
 import com.evenugo.dao.exceptions.DataException;
 import com.evenugo.dao.impl.PaisDaoImpl;
-import com.evenugo.dao.service.*;
+import com.evenugo.service.*;
 import com.evenugo.model.Pais;
-import com.evenugo.model.Provincia;
 import com.evenugo.util.DBUtils;
 
 public class PaisServiceImpl implements PaisService{
@@ -67,20 +65,6 @@ public class PaisServiceImpl implements PaisService{
 				DBUtils.closeConnection(connection);	
 
 			}
-	}
-	@Override
-	public List<Provincia> findByNombre(String nombre) throws DataException {
-//		List <Provincia> provincias = new ArrayList<Provincia>();
-//		 Provincia p = new Provincia ();
-//		 Provincia e = new Provincia ();
-//		 p.getNombre();
-//		 
-//		e.add("eeeee");
-//		
-//		
-//		
-//		
-		return null;
 	}
 }
 
