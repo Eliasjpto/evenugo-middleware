@@ -29,6 +29,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
 	public UsuarioServiceImpl () {
 		usuario = new UsuarioDaoImpl(); 
+		mailService = new MailServiceImpl();
 	}
 	public Usuario  findByID(long PK)
 			throws DataException{
@@ -114,7 +115,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
 
 	@Override
-	public void update(Usuario u)
+	public Usuario update(Usuario u)
 			throws DataException{
 		Connection cn = null;
 		boolean commit = false;
@@ -137,6 +138,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 		} finally {
 			DBUtils.closeConnection(cn, commit);
 		}
+		return u;
 	}
 
 

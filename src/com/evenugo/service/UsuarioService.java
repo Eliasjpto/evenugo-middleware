@@ -16,7 +16,7 @@ public interface UsuarioService {
 			throws DataException;
 
 	
-	 public void update(Usuario o)
+	 public Usuario update(Usuario u)
 			 throws DataException;
 	 
 	 public Usuario create(Usuario u) 

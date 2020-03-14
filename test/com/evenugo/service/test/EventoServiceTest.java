@@ -15,12 +15,7 @@ public class EventoServiceTest {
 	}
 	
 	public void testFindById() throws DataException {		
-		Evento e = eventoService.findById((long) 2, "ESP");
-		System.out.println(e);
-		
-	}
-	public void testFindByNombre1() throws DataException {		
-		Evento e = eventoService.findByNombre("r", "ESP");
+		Evento e = eventoService.findById((long) 4, "ENG");
 		System.out.println(e);
 		
 	}
@@ -85,8 +80,8 @@ public class EventoServiceTest {
 		// TODO Auto-generated method stub
 		try {
 		EventoServiceTest test = new EventoServiceTest();
-	test.testFindById();
-//		test.testFindByLocalidad();
+//	test.testFindById();
+	test.testFindByLocalidad();
   // ntest.testFindByNombre();
 	//	test.testFindByFechaHasta();  
 	//	test.testFindByTipo();

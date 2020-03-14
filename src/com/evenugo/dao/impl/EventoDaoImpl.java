@@ -25,7 +25,7 @@ public class EventoDaoImpl implements EventoDao {
 	@Override
 	public Evento findById(Connection cn,Long pk,String idioma) 
 			throws DataException{
-		//  meterle el id de idioma
+		
 		Evento evento =null;
 		String query = null;
 		ResultSet rs = null;
@@ -39,9 +39,9 @@ public class EventoDaoImpl implements EventoDao {
 			query = "select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,avg(v.PUNTUACION) "
 					+ " from evento e" 
 					+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO"
-					+ " INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO" 
+					+ " LEFT JOIN    valoracion v  ON v.ID_EVENTO = e.ID_EVENTO" 
 					+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?" ;
-					// ddd
+			// ddd
 
 
 			// en sql puedo sacar evento 1 sin haberlo creado
@@ -68,51 +68,6 @@ public class EventoDaoImpl implements EventoDao {
 		}
 		return evento;
 	}
-	public Evento findByNombre(Connection cn,String nombre,String idioma) 
-			throws DataException{
-		//  meterle el id de idioma
-		Evento evento =null;
-		String query = null;
-		ResultSet rs = null;
-		PreparedStatement preparedStatement = null;
-
-
-		try {
-			cn = DBUtils.conectar();
-
-
-			query = "select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,v.PUNTUACION"
-					+ " from evento e" 
-					+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO"
-					+ " where ei.NOMBRE like ? and ei.ID_IDIOMA = ?";
-
-			//	where upper(ei.NOMBRE) like upper("%S%") and ei.ID_IDIOMA = "ESP" ;
-
-
-			// en sql puedo sacar evento 1 sin haberlo creado
-			preparedStatement = cn.prepareStatement(query);
-			System.out.println(query);
-			logger.info("aviso");
-
-			int i = 1;
-			preparedStatement.setString(i++, nombre);
-			preparedStatement.setString(i++, idioma);
-
-			rs = preparedStatement.executeQuery();
-
-			if(rs.next()) {
-				evento = loadNext(rs);
-			}
-		} catch (SQLException e) {
-			System.out.println("Problema en la Query.");
-			//	 logger.fatal("idEvento :"+pk,"idIdioma : "+idioma);
-			throw new DataException(e);
-		} finally {
-			DBUtils.closeResultSet(rs);
-			DBUtils.closeStatement(preparedStatement);
-		}
-		return evento;
-	}
 
 
 	@Override
@@ -127,74 +82,77 @@ public class EventoDaoImpl implements EventoDao {
 		try {
 			//Crear una sentencia SQL y Meter en rs el resultado de la query.
 			StringBuilder sb = new StringBuilder(
-					"select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v.PUNTUACION "
+					"select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,v.PUNTUACION"
 							+ " from evento e "
 							+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO "
+							+ " INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO" 
 					);
 
 			if (c.getIdTipoEvento()!=null) {				
 				sb.append(" INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO ");				
 			}
-					if (c.getValoracionMin()!=null) {				
-						sb.append(" AND v.PUNTUACION = ? ");	 	// 		left outerjoin 
-					}
+			if (c.getValoracionMin()!=null) {				
+				sb.append(" AND v.PUNTUACION = ? ");	 	// 		left outerjoin 
+			}
 
 
-			boolean first = true;
+			boolean first = false;
+			// porque falso
+			sb.append("WHERE ei.ID_IDIOMA = ? ");
 			first = SQLUtils.addClause(c.getIdLocalidad(), sb, first," e.ID_LOCALIDAD = ? "
 					);  logger.fatal("llegamos ad");
 					first = SQLUtils.addClause(c.getNombre(), sb, first, " UPPER(ei.NOMBRE) LIKE UPPER (?) ");
-					 logger.fatal("llegamos c");
-						first = SQLUtils.addClause(c.getFechaDesde(), sb, first,"e.FECHA_HORA  > ? ");
-						first = SQLUtils.addClause(c.getFechaHasta(), sb, first,"e.FECHA_HORA  < ? ");
-			first = SQLUtils.addClause(c.getIdTipoEvento(), sb, first," te.ID_TIPO_EVENTO = ? ");
+					logger.fatal("llegamos c");
+					first = SQLUtils.addClause(c.getFechaDesde(), sb, first,"e.FECHA_HORA  > ? ");
+					first = SQLUtils.addClause(c.getFechaHasta(), sb, first,"e.FECHA_HORA  < ? ");
+					first = SQLUtils.addClause(c.getIdTipoEvento(), sb, first," te.ID_TIPO_EVENTO = ? ");
 
-						if (c.getValoracionMin()!=null) {			
-							sb.append(" GROUP BY e.ID_EVENTO ");
-							sb.append(" HAVING AVG(P.VALORACION) > ? "
-				 + " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?" );
+					if (c.getValoracionMin()!=null) {			
+						sb.append(" GROUP BY e.ID_EVENTO ");
+						sb.append(" HAVING AVG(v.PUNTUACION) > ? "
+								+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?" );
 					}
-			
-			query = sb.toString();
-			logger.info("resultado de la consulta :" +query );
+
+					query = sb.toString();
+					logger.info("resultado de la consulta :" +query );
 
 
-			preparedStatement = cn.prepareStatement(query);
+					preparedStatement = cn.prepareStatement(query);
 
-			int i = 1;
+					int i = 1;
 
-			if (c.getIdLocalidad()!=null) {		
-				//		//		andlocalidad takata 
-				preparedStatement.setLong(i++, c.getIdLocalidad());
-			}
-					
-						if (c.getFechaDesde()!=null) {
+					if (c.getIdLocalidad()!=null) {		
+						//		//		andlocalidad takata 
+						preparedStatement.setLong(i++, c.getIdLocalidad());
+					}
+
+					if (c.getFechaDesde()!=null) {
 						preparedStatement.setDate(i++, new java.sql.Date(c.getFechaDesde().getTime()));
 					}
-			////
+					////
 					if (c.getFechaHasta()!=null) {
-							preparedStatement.setDate(i++, new java.sql.Date(c.getFechaHasta().getTime()));
-						}
-						//////
-						if (c.getNombre()!=null) {	
-							preparedStatement.setString(i++, "%"+c.getNombre()+"%");
-							 logger.fatal("llegamos");
-				}
-			if (c.getIdTipoEvento()!=null) {			
-				preparedStatement.setLong(i++, c.getIdTipoEvento());
-			}
+						preparedStatement.setDate(i++, new java.sql.Date(c.getFechaHasta().getTime()));
+					}
+					//////
+					if (c.getNombre()!=null) {	
+						preparedStatement.setString(i++, "%"+c.getNombre()+"%");
+						logger.fatal("llegamos");
+					}
+					if (c.getIdTipoEvento()!=null) {			
+						preparedStatement.setLong(i++, c.getIdTipoEvento());
+					}
 
 
-								if (c.getValoracionMin()!=null) {	
-										preparedStatement.setInt(i++, c.getValoracionMin());
-								}
+					if (c.getValoracionMin()!=null) {	
+						preparedStatement.setInt(i++, c.getValoracionMin());
+					}
 
-			rs = preparedStatement.executeQuery();
-			////
-			////
-			while (rs.next()) {
-				eventos.add(loadNext (rs));
-			}
+					rs = preparedStatement.executeQuery();
+					////
+					////
+					while (rs.next()) {
+						eventos.add(loadNext (rs));
+					}
 		} catch (SQLException e) {
 
 			logger.fatal("no ah ido bien la query :" );
@@ -202,7 +160,7 @@ public class EventoDaoImpl implements EventoDao {
 		}
 		return eventos;
 	}	
-	
+
 	protected Evento loadNext(ResultSet rs)
 			throws SQLException,DataException {	
 		int i = 1;
@@ -218,10 +176,5 @@ public class EventoDaoImpl implements EventoDao {
 		e.setDescripcion(rs.getString(i++));
 		return e;
 	}
-
-	//	reparedStatement = cn.prepareStatement(query);
-
-	//		preparedStatement.setDate(i++, new java.sql.Date(fechaDesde.getTime()));
-	//		preparedStatement.setDate(i++, new java.sql.Date(fechaHasta.getTime()));
 }
 

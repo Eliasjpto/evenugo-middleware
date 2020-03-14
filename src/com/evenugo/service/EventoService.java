@@ -8,10 +8,10 @@ import com.evenugo.model.Evento;
 import com.evenugo.model.criteria.EventoCriteria;
 
 public interface EventoService {
+	
 	public Evento findById(Long pk, String idioma)
 			throws DataException;//  meterle el id de idioma
-	public Evento findByNombre(String nombre,String idioma) 
-			throws DataException;
+
 
 	public List<Evento> findByCriteria(EventoCriteria c,String idioma)
 			throws DataException;

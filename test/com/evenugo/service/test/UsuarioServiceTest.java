@@ -59,9 +59,27 @@ public class UsuarioServiceTest {
 		logger.info("Test created finished.\n");
 	}
 
-//	 s.create(a);
-//	 System.out.println(a.getPK()); xq no y asi y con try y catch y xq date y no como en test de evento cn 2
+	public static void updateUsuario () throws DataException, MailException {
+//		java.util.Date e = new java.util.Date();
+//		java.sql.Date i = new java.sql.Date((1999-05-12));
+//		e =i ;
+	
+		UsuarioService s = new UsuarioServiceImpl();
+		Usuario a = new Usuario();
+	a.setPK((int)14);
+		a.setEmail("hbk.ep@hotmail.es");
 		
+		try {
+
+			a = s.update(a);
+
+	//		logger. info("Created: " + ToStringUtil.toString(u));
+
+		} catch (Throwable t) {
+			logger.error(t.getMessage(), t);
+		}
+		logger.info("Test created finished.\n");
+	}
 
 
 		public static void main(String[] args) throws MailException,DataException {
@@ -69,8 +87,8 @@ public class UsuarioServiceTest {
 			try {
 				UsuarioServiceTest test = new UsuarioServiceTest();
 //				test.testFindById();
-			test.createUsuario();
-
+		//	test.createUsuario();
+           test.updateUsuario();
 			} catch (DataException de) {
 					de.printStackTrace();
 				}

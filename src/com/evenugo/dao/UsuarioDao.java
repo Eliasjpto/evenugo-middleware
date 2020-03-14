@@ -17,7 +17,7 @@ public Usuario findByEmail (Connection connection,String email)
 public  Usuario create(Connection connection, Usuario user) 
 		throws  DataException;
 
- public void update(Connection connection,Usuario o)
+ public Usuario update(Connection connection,Usuario o)
 		 throws DataException;
  
 // public long delete(Connection connection, Long id) 

@@ -13,8 +13,6 @@ public interface EventoDao {
 
 	public Evento findById(Connection connection,Long pk, String idioma)
 			throws DataException;//  meterle el id de idioma
-	public Evento findByNombre(Connection cn,String nombre,String idioma) 
-			throws DataException;
 
 	public List<Evento> findByCriteria(Connection connection,EventoCriteria c,String idioma)
 			throws DataException;
@@ -23,10 +21,6 @@ public interface EventoDao {
 //	public List<Evento> findByName( Connection connection,String name,String idioma)
 //			throws DataException;
 //
-//	public List<Evento> findTipoEvento(Connection connection,long idTipoEvento,String idioma)
-//		throws DataException;
-
-
 	//	public void create(Evento e);
 	//	
 	//	public void update(Evento e);

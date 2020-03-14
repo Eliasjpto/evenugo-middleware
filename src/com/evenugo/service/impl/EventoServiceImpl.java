@@ -40,27 +40,7 @@ public class EventoServiceImpl implements EventoService  {
 		}
 
 	}
-	public Evento findByNombre(String nombre,String idioma) 
-			throws DataException{
-		Connection cn = null;
 
-		try {
-
-			cn = DBUtils.conectar();
-			cn.setAutoCommit(true);
-
-			return evento.findByNombre(cn, nombre, idioma);
-		} catch (SQLException e){
-
-			throw new DataException(e);
-		} finally {
-			//		 DBUtils.closeResultSet(resultSet);
-			//		 DBUtils.closeStatement();  se cierra en el paisdaoimp 
-			DBUtils.closeConnection(cn);	
-		}
-
-		
-	}
 	public List<Evento> findByCriteria(EventoCriteria c,String idioma)
 			throws DataException{
 		Connection connection = null;
