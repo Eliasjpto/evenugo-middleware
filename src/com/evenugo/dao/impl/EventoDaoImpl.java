@@ -36,15 +36,15 @@ public class EventoDaoImpl implements EventoDao {
 			cn = DBUtils.conectar();
 
 
-			query = "select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,avg(v.PUNTUACION) "
+			query = "select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,"
+					+ "ei.ID_IDIOMA,AVG(v.PUNTUACION)"
 					+ " from evento e" 
-					+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO"
-					+ " INNER JOIN    valoracion v  ON v.ID_EVENTO = e.ID_EVENTO" 
-					+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?" ;
-			// ddd
+					+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO "
+					+ " INNER JOIN    valoracion v  ON v.ID_EVENTO = e.ID_EVENTO " 
+					+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ? " 
+			         +  " GROUP BY e.ID_EVENTO ";
 
-
-			// en sql puedo sacar evento 1 sin haberlo creado
+			
 			preparedStatement = cn.prepareStatement(query);
 			System.out.println(query);
 			logger.info("aviso");
@@ -82,7 +82,7 @@ public class EventoDaoImpl implements EventoDao {
 		try {
 			//Crear una sentencia SQL y Meter en rs el resultado de la query.
 			StringBuilder sb = new StringBuilder(
-					"select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,v.PUNTUACION"
+					"select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,AVG(v.PUNTUACION) "
 							+ " from evento e "
 							+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO "
 							+ " INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO " 
@@ -91,26 +91,29 @@ public class EventoDaoImpl implements EventoDao {
 			if (c.getIdTipoEvento()!=null) {				
 				sb.append(" INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO ");				
 			}
-			if (c.getValoracionMin()!=null) {				
-				sb.append(" AND v.PUNTUACION = ? ");	 	// 		left outerjoin 
-			}
-
+			if (c.getValoracionMin()!=null) {			
+				sb.append(" GROUP BY e.ID_EVENTO ");
+				sb.append(" HAVING AVG(v.PUNTUACION) > ? "
+						+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ? " );
+			
 
 			boolean first = false;
 			// porque falso
-			sb.append("WHERE ei.ID_IDIOMA = ? ");
+	
+			
 			first = SQLUtils.addClause(c.getIdLocalidad(), sb, first," e.ID_LOCALIDAD = ? "
 					);  logger.fatal("llegamos ad");
 					first = SQLUtils.addClause(c.getNombre(), sb, first, " UPPER(ei.NOMBRE) LIKE UPPER (?) ");
 					logger.fatal("llegamos c");
 					first = SQLUtils.addClause(c.getFechaDesde(), sb, first,"e.FECHA_HORA  > ? ");
+					logger.fatal("llegamos c");
 					first = SQLUtils.addClause(c.getFechaHasta(), sb, first,"e.FECHA_HORA  < ? ");
+					logger.fatal("llegamos c");
 					first = SQLUtils.addClause(c.getIdTipoEvento(), sb, first," te.ID_TIPO_EVENTO = ? ");
-
-					if (c.getValoracionMin()!=null) {			
-						sb.append(" GROUP BY e.ID_EVENTO ");
-						sb.append(" HAVING AVG(v.PUNTUACION) > ? "
-								+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?" );
+					logger.fatal("llegamos c");
+					first = SQLUtils.addClause(c.getValoracionMin(), sb, first," AVG(v.PUNTUACION) > ? ");
+					logger.fatal("llegamos c");
+					
 					}
 
 					query = sb.toString();

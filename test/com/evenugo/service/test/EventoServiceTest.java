@@ -80,7 +80,8 @@ public class EventoServiceTest {
 		// TODO Auto-generated method stub
 		try {
 		EventoServiceTest test = new EventoServiceTest();
-	test.testFindById();
+	 test.testFindById();
+
 //	test.testFindByLocalidad();
   // ntest.testFindByNombre();
 	//	test.testFindByFechaHasta();  
