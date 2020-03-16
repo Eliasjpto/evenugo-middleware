@@ -39,7 +39,7 @@ public class EventoDaoImpl implements EventoDao {
 			query = "select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,avg(v.PUNTUACION) "
 					+ " from evento e" 
 					+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO"
-					+ " LEFT JOIN    valoracion v  ON v.ID_EVENTO = e.ID_EVENTO" 
+					+ " INNER JOIN    valoracion v  ON v.ID_EVENTO = e.ID_EVENTO" 
 					+ " where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?" ;
 			// ddd
 
@@ -85,7 +85,7 @@ public class EventoDaoImpl implements EventoDao {
 					"select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,v.PUNTUACION"
 							+ " from evento e "
 							+ " INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO "
-							+ " INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO" 
+							+ " INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO " 
 					);
 
 			if (c.getIdTipoEvento()!=null) {				

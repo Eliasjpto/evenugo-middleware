@@ -65,9 +65,9 @@ public class UsuarioServiceTest {
 //		e =i ;
 	
 		UsuarioService s = new UsuarioServiceImpl();
-		Usuario a = new Usuario();
-	a.setPK((int)14);
-		a.setEmail("hbk.ep@hotmail.es");
+		Usuario a = new Usuario(); 
+	// obtener a  a un  usuario apartir del id y luego hacer el cambio al llamar al dao
+		
 		
 		try {
 
