@@ -1,0 +1,104 @@
+2020-03-19 03:56:32.846 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 03:56:32.846 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 03:56:32.959 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 03:56:32.959 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 03:56:32.961 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 03:56:32.961 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 03:56:32.963 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 03:56:32.963 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 03:56:32.965 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 03:56:32.965 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 03:56:32.969 INFO  EventoDaoImpl.findByCriteria:120 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO WHERE  UPPER(ei.NOMBRE) LIKE UPPER (?) 
+2020-03-19 03:56:32.969 INFO  EventoDaoImpl.findByCriteria:120 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO WHERE  UPPER(ei.NOMBRE) LIKE UPPER (?) 
+2020-03-19 03:56:33.113 FATAL EventoDaoImpl.findByCriteria:142 - llegamos
+2020-03-19 03:56:33.113 FATAL EventoDaoImpl.findByCriteria:142 - llegamos
+2020-03-19 03:57:32.340 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 03:57:32.340 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 03:57:32.356 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 03:57:32.356 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 03:57:32.358 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 03:57:32.358 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 03:57:32.359 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 03:57:32.359 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 03:57:32.361 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 03:57:32.361 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 03:57:32.364 INFO  EventoDaoImpl.findByCriteria:120 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO WHERE e.FECHA_HORA  < ? 
+2020-03-19 03:57:32.364 INFO  EventoDaoImpl.findByCriteria:120 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO WHERE e.FECHA_HORA  < ? 
+2020-03-19 04:01:41.489 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 04:01:41.489 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 04:01:41.508 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 04:01:41.508 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 04:01:41.509 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 04:01:41.509 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 04:01:41.510 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 04:01:41.510 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 04:01:41.511 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 04:01:41.511 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 04:01:41.514 INFO  EventoDaoImpl.findByCriteria:120 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ? 
+2020-03-19 04:01:41.514 INFO  EventoDaoImpl.findByCriteria:120 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ? 
+2020-03-19 04:29:48.956 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 04:29:48.956 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 04:29:49.010 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 04:29:49.010 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 04:29:49.011 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 04:29:49.011 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 04:29:49.012 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 04:29:49.012 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 04:29:49.014 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 04:29:49.014 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 04:29:49.027 INFO  EventoDaoImpl.findByCriteria:120 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ? 
+2020-03-19 04:29:49.027 INFO  EventoDaoImpl.findByCriteria:120 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ? 
+2020-03-19 04:29:49.190 FATAL EventoDaoImpl.findByCriteria:161 - no ah ido bien la query :
+2020-03-19 04:29:49.190 FATAL EventoDaoImpl.findByCriteria:161 - no ah ido bien la query :
+2020-03-19 04:52:19.953 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 04:52:19.953 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 04:52:20.004 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 04:52:20.004 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 04:52:20.005 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 04:52:20.005 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 04:52:20.006 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 04:52:20.006 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 04:52:20.011 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 04:52:20.011 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 04:52:20.012 INFO  EventoDaoImpl.findByCriteria:123 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ?  GROUP BY R.ID_RESTAURANTE 
+2020-03-19 04:52:20.012 INFO  EventoDaoImpl.findByCriteria:123 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ?  GROUP BY R.ID_RESTAURANTE 
+2020-03-19 04:52:20.473 FATAL EventoDaoImpl.findByCriteria:164 - no ah ido bien la query :
+2020-03-19 04:52:20.473 FATAL EventoDaoImpl.findByCriteria:164 - no ah ido bien la query :
+2020-03-19 04:53:39.823 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 04:53:39.823 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 04:53:39.840 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 04:53:39.840 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 04:53:39.841 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 04:53:39.841 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 04:53:39.842 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 04:53:39.842 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 04:53:39.843 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 04:53:39.843 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 04:53:39.845 INFO  EventoDaoImpl.findByCriteria:123 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ?  GROUP BY R.ID_RESTAURANTE 
+2020-03-19 04:53:39.845 INFO  EventoDaoImpl.findByCriteria:123 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ?  GROUP BY R.ID_RESTAURANTE 
+2020-03-19 04:53:40.000 FATAL EventoDaoImpl.findByCriteria:164 - no ah ido bien la query :
+2020-03-19 04:53:40.000 FATAL EventoDaoImpl.findByCriteria:164 - no ah ido bien la query :
+2020-03-19 04:55:03.314 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 04:55:03.314 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 04:55:03.331 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 04:55:03.331 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 04:55:03.332 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 04:55:03.332 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 04:55:03.333 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 04:55:03.333 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 04:55:03.334 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 04:55:03.334 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 04:55:03.336 INFO  EventoDaoImpl.findByCriteria:123 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-19 04:55:03.336 INFO  EventoDaoImpl.findByCriteria:123 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-19 12:48:08.957 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 12:48:08.957 FATAL EventoDaoImpl.findByCriteria:105 - llegamos ad
+2020-03-19 12:48:09.010 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 12:48:09.010 FATAL EventoDaoImpl.findByCriteria:107 - llegamos c
+2020-03-19 12:48:09.011 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 12:48:09.011 FATAL EventoDaoImpl.findByCriteria:109 - llegamos c
+2020-03-19 12:48:09.012 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 12:48:09.012 FATAL EventoDaoImpl.findByCriteria:111 - llegamos c
+2020-03-19 12:48:09.020 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 12:48:09.020 FATAL EventoDaoImpl.findByCriteria:113 - llegamos c
+2020-03-19 12:48:09.021 INFO  EventoDaoImpl.findByCriteria:123 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-19 12:48:09.021 INFO  EventoDaoImpl.findByCriteria:123 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 

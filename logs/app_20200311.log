@@ -1,0 +1,16 @@
+2020-03-09 03:58:18.175 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-09 03:58:18.175 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-11 04:38:25.101 ERROR UsuarioServiceTest.createUsuario:57 - null
+java.lang.NullPointerException: null
+	at com.evenugo.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:91) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+2020-03-11 04:38:25.101 ERROR UsuarioServiceTest.createUsuario:57 - null
+java.lang.NullPointerException: null
+	at com.evenugo.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:91) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+2020-03-11 04:38:25.649 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-11 04:38:25.649 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+

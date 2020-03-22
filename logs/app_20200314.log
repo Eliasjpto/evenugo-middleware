@@ -1,0 +1,92 @@
+2020-03-14 02:28:58.906 ERROR UsuarioServiceTest.createUsuario:57 - Trying to send email  from  using hostname  to [Ljava.lang.String;@710636b0
+com.evenugo.exceptions.MailException: Trying to send email  from  using hostname  to [Ljava.lang.String;@710636b0
+	at com.evenugo.service.impl.MailServiceImpl.sendMail(MailServiceImpl.java:47) ~[bin/:?]
+	at com.evenugo.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:94) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+Caused by: org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.evenugo.service.impl.MailServiceImpl.sendMail(MailServiceImpl.java:44) ~[bin/:?]
+	... 3 more
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m17sm326485wrw.3 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965) ~[javax.mail.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876) ~[javax.mail.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780) ~[javax.mail.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:388) ~[javax.mail.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:246) ~[javax.mail.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:195) ~[javax.mail.jar:1.6.2]
+	at javax.mail.Transport.send0(Transport.java:254) ~[javax.mail.jar:1.6.2]
+	at javax.mail.Transport.send(Transport.java:124) ~[javax.mail.jar:1.6.2]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.evenugo.service.impl.MailServiceImpl.sendMail(MailServiceImpl.java:44) ~[bin/:?]
+	... 3 more
+2020-03-14 02:28:58.906 ERROR UsuarioServiceTest.createUsuario:57 - Trying to send email  from  using hostname  to [Ljava.lang.String;@710636b0
+com.evenugo.exceptions.MailException: Trying to send email  from  using hostname  to [Ljava.lang.String;@710636b0
+	at com.evenugo.service.impl.MailServiceImpl.sendMail(MailServiceImpl.java:47) ~[bin/:?]
+	at com.evenugo.service.impl.UsuarioServiceImpl.create(UsuarioServiceImpl.java:94) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.createUsuario(UsuarioServiceTest.java:52) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:72) [bin/:?]
+Caused by: org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.evenugo.service.impl.MailServiceImpl.sendMail(MailServiceImpl.java:44) ~[bin/:?]
+	... 3 more
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m17sm326485wrw.3 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965) ~[javax.mail.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876) ~[javax.mail.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780) ~[javax.mail.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:388) ~[javax.mail.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:246) ~[javax.mail.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:195) ~[javax.mail.jar:1.6.2]
+	at javax.mail.Transport.send0(Transport.java:254) ~[javax.mail.jar:1.6.2]
+	at javax.mail.Transport.send(Transport.java:124) ~[javax.mail.jar:1.6.2]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459) ~[commons-email-1.5.jar:1.5]
+	at org.apache.commons.mail.Email.send(Email.java:1496) ~[commons-email-1.5.jar:1.5]
+	at com.evenugo.service.impl.MailServiceImpl.sendMail(MailServiceImpl.java:44) ~[bin/:?]
+	... 3 more
+2020-03-14 02:28:59.163 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-14 02:28:59.163 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-14 02:36:02.607 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-14 02:36:02.607 INFO  UsuarioServiceTest.createUsuario:59 - Test created finished.
+
+2020-03-14 04:21:20.631 ERROR UsuarioServiceTest.updateUsuario:79 - null
+java.lang.NullPointerException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.update(UsuarioDaoImpl.java:211) ~[bin/:?]
+	at com.evenugo.service.impl.UsuarioServiceImpl.update(UsuarioServiceImpl.java:132) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.updateUsuario(UsuarioServiceTest.java:74) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:91) [bin/:?]
+2020-03-14 04:21:20.631 ERROR UsuarioServiceTest.updateUsuario:79 - null
+java.lang.NullPointerException: null
+	at com.evenugo.dao.impl.UsuarioDaoImpl.update(UsuarioDaoImpl.java:211) ~[bin/:?]
+	at com.evenugo.service.impl.UsuarioServiceImpl.update(UsuarioServiceImpl.java:132) ~[bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.updateUsuario(UsuarioServiceTest.java:74) [bin/:?]
+	at com.evenugo.service.test.UsuarioServiceTest.main(UsuarioServiceTest.java:91) [bin/:?]
+2020-03-14 04:21:20.746 INFO  UsuarioServiceTest.updateUsuario:81 - Test created finished.
+
+2020-03-14 04:21:20.746 INFO  UsuarioServiceTest.updateUsuario:81 - Test created finished.
+
+2020-03-14 04:37:51.978 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-14 04:37:51.978 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-14 04:51:19.762 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-14 04:51:19.762 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-14 04:57:03.170 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-14 04:57:03.170 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-14 05:00:44.623 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-14 05:00:44.623 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-14 05:03:40.512 FATAL EventoDaoImpl.findByCriteria:101 - llegamos ad
+2020-03-14 05:03:40.512 FATAL EventoDaoImpl.findByCriteria:101 - llegamos ad
+2020-03-14 05:03:40.528 FATAL EventoDaoImpl.findByCriteria:103 - llegamos c
+2020-03-14 05:03:40.528 FATAL EventoDaoImpl.findByCriteria:103 - llegamos c
+2020-03-14 05:03:40.529 INFO  EventoDaoImpl.findByCriteria:115 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v.PUNTUACION from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTOWHERE  e.ID_LOCALIDAD = ? 
+2020-03-14 05:03:40.529 INFO  EventoDaoImpl.findByCriteria:115 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v.PUNTUACION from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTOWHERE  e.ID_LOCALIDAD = ? 
+2020-03-14 05:03:40.788 FATAL EventoDaoImpl.findByCriteria:156 - no ah ido bien la query :
+2020-03-14 05:03:40.788 FATAL EventoDaoImpl.findByCriteria:156 - no ah ido bien la query :

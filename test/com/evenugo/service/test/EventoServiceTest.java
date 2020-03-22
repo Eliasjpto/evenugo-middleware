@@ -1,33 +1,67 @@
 package com.evenugo.service.test;
 import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.evenugo.dao.exceptions.DataException;
+import com.evenugo.dao.impl.EventoDaoImpl;
 import com.evenugo.service.EventoService;
 import com.evenugo.service.impl.EventoServiceImpl;
 import com.evenugo.model.Evento;
 import com.evenugo.model.criteria.EventoCriteria;
 import java.util.Date;
 public class EventoServiceTest {
+	private static Logger logger = LogManager.getLogger(EventoServiceTest.class.getName());
 	
 	private EventoService eventoService = null;
 	
 	public EventoServiceTest() {
 		eventoService = new EventoServiceImpl();
 	}
+
 	
-	public void testFindById() throws DataException {		
+	public void testFindAll() throws DataException {	
+		logger.info("Testing testFindAll...");
+		// Sin ninguno criterio, solo el idioma
+		EventoCriteria c = new EventoCriteria();		
+		List<Evento>results = eventoService.findByCriteria(c, "ENG");
+		for (Evento e: results) {
+			System.out.println(e);
+		}
+		logger.info("testFindAll done!");
+	}
+	
+
+	
+	public void testFindById() throws DataException {	
+		logger.info("Testing findById...");
 		Evento e = eventoService.findById((long) 8, "ENG");
 		System.out.println(e);
-		
+		logger.info("findById done!");
+	}
+	
+	// Test de cada uno de los criterios, de manera individual
+	public void testFindByTipo() throws DataException {
+		logger.info("Testing testFindByTipo...");
+		EventoCriteria c = new EventoCriteria();
+		c.setIdTipoEvento(2L);
+		List<Evento>results = eventoService.findByCriteria(c, "ESP");
+		for (Evento e: results) {
+			System.out.println(e);
+		}
+		logger.info("testFindByTipo done!");
 	}
 	
 	public void testFindByLocalidad() throws DataException {
+		logger.info("Testing testFindByLocalidad...");
 		EventoCriteria c = new EventoCriteria();
 		c.setIdLocalidad((long) 4);
 		List<Evento> results = eventoService.findByCriteria(c, "ESP");	
 		for (Evento e: results) {
 			System.out.println(e);
 		}
-		
+		logger.info("testFindByLocalidad done!");
 	}
 	
 	public void testFindByNombre() throws DataException {
@@ -37,15 +71,9 @@ public class EventoServiceTest {
 		for (Evento e: results) {
 			System.out.println(e);
 		}
-}
-	public void testFindByTipo() throws DataException {
-		EventoCriteria c = new EventoCriteria();
-		c.setIdTipoEvento((long) 3);
-		List<Evento>results = eventoService.findByCriteria(c, "ESP");	
-		for (Evento e: results) {
-			System.out.println(e);
-		}
 	}
+	
+
 
 	public void testFindByFechaDesde() throws DataException {
 		EventoCriteria c = new EventoCriteria();
@@ -75,22 +103,33 @@ public class EventoServiceTest {
 		}
 	
 		
+	public void testFindByValoracionMin() throws DataException {
+		logger.info("Testing testFindByValoracionMin...");
+		EventoCriteria c = new EventoCriteria();
+		c.setValoracionMin(4);
+		List<Evento> results = eventoService.findByCriteria(c, "ESP");	
+		for (Evento e: results) {
+			System.out.println(e);
+		}
+		logger.info("testFindByValoracionMin done!");
+	}	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-		EventoServiceTest test = new EventoServiceTest();
-	 test.testFindById();
-
-//	test.testFindByLocalidad();
-  // ntest.testFindByNombre();
-	//	test.testFindByFechaHasta();  
-	//	test.testFindByTipo();
-	} catch (DataException de) {
+			EventoServiceTest test = new EventoServiceTest();
+		//	test.testFindAll();
+	//		test.testFindById();
+	//		test.testFindByTipo();
+	//		test.testFindByLocalidad();
+	//		test.testFindByValoracionMin();
+			 test.testFindByNombre();
+			test.testFindByFechaDesde(); 
+	//		test.testFindByTipo();
+		} catch (DataException de) {
 			de.printStackTrace();
 		}
-		
-		
+
 	}
 
 }

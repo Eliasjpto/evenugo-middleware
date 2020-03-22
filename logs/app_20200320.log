@@ -1,0 +1,198 @@
+2020-03-20 00:55:30.680 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 00:55:30.680 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 00:55:31.214 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 00:55:31.214 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:17:00.777 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:17:00.777 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:17:10.432 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:17:10.432 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:17:10.884 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:17:10.884 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:17:11.420 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:17:11.420 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:17:11.423 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:17:11.423 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:17:12.842 INFO  EventoDaoImpl.findByCriteria:125 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  where ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:17:12.842 INFO  EventoDaoImpl.findByCriteria:125 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  where ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:17:13.174 INFO  EventoDaoImpl.findByCriteria:171 - Encontrados 0 resultados
+2020-03-20 01:17:13.174 INFO  EventoDaoImpl.findByCriteria:171 - Encontrados 0 resultados
+2020-03-20 01:17:13.194 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:17:13.194 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:20:27.274 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:20:27.274 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:20:31.417 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:20:31.417 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:20:31.801 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:20:31.801 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:20:31.899 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:20:31.899 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:20:31.900 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:20:31.900 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:20:32.197 INFO  EventoDaoImpl.findByCriteria:125 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  where ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:20:32.197 INFO  EventoDaoImpl.findByCriteria:125 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  where ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:20:32.337 INFO  EventoDaoImpl.findByCriteria:171 - Encontrados 1 resultados
+2020-03-20 01:20:32.337 INFO  EventoDaoImpl.findByCriteria:171 - Encontrados 1 resultados
+2020-03-20 01:20:32.342 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:20:32.342 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:24:00.976 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:24:00.976 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:24:04.896 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:24:04.896 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:24:05.178 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:24:05.178 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:24:05.279 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:24:05.279 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:24:05.281 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:24:05.281 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:24:05.644 INFO  EventoDaoImpl.findByCriteria:128 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:24:05.644 INFO  EventoDaoImpl.findByCriteria:128 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:24:05.675 INFO  EventoDaoImpl.findByCriteria:173 - Encontrados 1 resultados
+2020-03-20 01:24:05.675 INFO  EventoDaoImpl.findByCriteria:173 - Encontrados 1 resultados
+2020-03-20 01:24:05.679 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:24:05.679 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:24:05.680 INFO  EventoServiceTest.testFindByLocalidad:43 - Testing testFindByLocalidad...
+2020-03-20 01:24:05.680 INFO  EventoServiceTest.testFindByLocalidad:43 - Testing testFindByLocalidad...
+2020-03-20 01:24:05.960 INFO  EventoDaoImpl.findByCriteria:128 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:24:05.960 INFO  EventoDaoImpl.findByCriteria:128 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:24:06.046 INFO  EventoDaoImpl.findByCriteria:173 - Encontrados 1 resultados
+2020-03-20 01:24:06.046 INFO  EventoDaoImpl.findByCriteria:173 - Encontrados 1 resultados
+2020-03-20 01:24:06.050 INFO  EventoServiceTest.testFindByLocalidad:50 - testFindByLocalidad done!
+2020-03-20 01:24:06.050 INFO  EventoServiceTest.testFindByLocalidad:50 - testFindByLocalidad done!
+2020-03-20 01:31:25.707 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:31:25.707 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:31:37.431 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:31:37.431 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:31:37.767 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:31:37.767 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:31:38.070 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:31:38.070 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:31:38.071 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:31:38.071 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:31:38.761 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:31:38.761 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:31:38.881 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:31:38.881 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:31:38.900 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:31:38.900 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:31:38.902 INFO  EventoServiceTest.testFindByLocalidad:43 - Testing testFindByLocalidad...
+2020-03-20 01:31:38.902 INFO  EventoServiceTest.testFindByLocalidad:43 - Testing testFindByLocalidad...
+2020-03-20 01:31:39.373 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:31:39.373 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:31:39.381 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:31:39.381 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:31:39.384 INFO  EventoServiceTest.testFindByLocalidad:50 - testFindByLocalidad done!
+2020-03-20 01:31:39.384 INFO  EventoServiceTest.testFindByLocalidad:50 - testFindByLocalidad done!
+2020-03-20 01:31:39.385 INFO  EventoServiceTest.testFindByValoracionMin:93 - Testing testFindByValoracionMin...
+2020-03-20 01:31:39.385 INFO  EventoServiceTest.testFindByValoracionMin:93 - Testing testFindByValoracionMin...
+2020-03-20 01:31:39.678 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO  HAVING AVG(v.puntuacion) >= ? 
+2020-03-20 01:31:39.678 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO  HAVING AVG(v.puntuacion) >= ? 
+2020-03-20 01:31:39.798 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 7 resultados
+2020-03-20 01:31:39.798 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 7 resultados
+2020-03-20 01:31:39.802 INFO  EventoServiceTest.testFindByValoracionMin:100 - testFindByValoracionMin done!
+2020-03-20 01:31:39.802 INFO  EventoServiceTest.testFindByValoracionMin:100 - testFindByValoracionMin done!
+2020-03-20 01:32:22.057 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:32:22.057 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:32:26.076 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:32:26.076 INFO  EventoServiceTest.testFindById:24 - Testing findById...
+2020-03-20 01:32:32.626 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:32:32.626 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:32:32.671 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:32:32.671 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:32:33.280 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:33.280 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:33.408 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:33.408 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:33.755 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:32:33.755 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:32:33.756 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:32:33.756 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:32:33.805 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:32:33.805 INFO  EventoServiceTest.testFindById:27 - findById done!
+2020-03-20 01:32:33.806 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:32:33.806 INFO  EventoServiceTest.testFindByTipo:32 - Testing testFindByTipo...
+2020-03-20 01:32:34.653 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:34.653 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:34.801 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:34.801 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:34.825 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:32:34.825 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:32:34.827 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:32:34.827 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:32:34.828 INFO  EventoServiceTest.testFindByLocalidad:43 - Testing testFindByLocalidad...
+2020-03-20 01:32:34.828 INFO  EventoServiceTest.testFindByLocalidad:43 - Testing testFindByLocalidad...
+2020-03-20 01:32:34.845 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:32:34.845 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:32:34.848 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:32:34.848 INFO  EventoServiceTest.testFindByTipo:39 - testFindByTipo done!
+2020-03-20 01:32:34.849 INFO  EventoServiceTest.testFindByLocalidad:43 - Testing testFindByLocalidad...
+2020-03-20 01:32:34.849 INFO  EventoServiceTest.testFindByLocalidad:43 - Testing testFindByLocalidad...
+2020-03-20 01:32:35.261 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:35.261 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:35.322 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:35.322 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:32:35.338 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:32:35.338 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:32:35.341 INFO  EventoServiceTest.testFindByLocalidad:50 - testFindByLocalidad done!
+2020-03-20 01:32:35.341 INFO  EventoServiceTest.testFindByLocalidad:50 - testFindByLocalidad done!
+2020-03-20 01:32:35.343 INFO  EventoServiceTest.testFindByValoracionMin:93 - Testing testFindByValoracionMin...
+2020-03-20 01:32:35.343 INFO  EventoServiceTest.testFindByValoracionMin:93 - Testing testFindByValoracionMin...
+2020-03-20 01:32:35.350 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:32:35.350 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:32:35.354 INFO  EventoServiceTest.testFindByLocalidad:50 - testFindByLocalidad done!
+2020-03-20 01:32:35.354 INFO  EventoServiceTest.testFindByLocalidad:50 - testFindByLocalidad done!
+2020-03-20 01:32:35.355 INFO  EventoServiceTest.testFindByValoracionMin:93 - Testing testFindByValoracionMin...
+2020-03-20 01:32:35.355 INFO  EventoServiceTest.testFindByValoracionMin:93 - Testing testFindByValoracionMin...
+2020-03-20 01:32:35.744 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO  HAVING AVG(v.puntuacion) >= ? 
+2020-03-20 01:32:35.749 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO  HAVING AVG(v.puntuacion) >= ? 
+2020-03-20 01:32:35.744 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO  HAVING AVG(v.puntuacion) >= ? 
+2020-03-20 01:32:35.749 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO  HAVING AVG(v.puntuacion) >= ? 
+2020-03-20 01:32:35.806 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 2 resultados
+2020-03-20 01:32:35.806 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 2 resultados
+2020-03-20 01:32:35.814 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 2 resultados
+2020-03-20 01:32:35.814 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 2 resultados
+2020-03-20 01:32:35.816 INFO  EventoServiceTest.testFindByValoracionMin:100 - testFindByValoracionMin done!
+2020-03-20 01:32:35.816 INFO  EventoServiceTest.testFindByValoracionMin:100 - testFindByValoracionMin done!
+2020-03-20 01:32:35.822 INFO  EventoServiceTest.testFindByValoracionMin:100 - testFindByValoracionMin done!
+2020-03-20 01:32:35.822 INFO  EventoServiceTest.testFindByValoracionMin:100 - testFindByValoracionMin done!
+2020-03-20 01:44:29.865 INFO  EventoServiceTest.testFindAll:25 - Testing testFindAll...
+2020-03-20 01:44:29.865 INFO  EventoServiceTest.testFindAll:25 - Testing testFindAll...
+2020-03-20 01:44:38.367 INFO  EventoServiceTest.testFindAll:25 - Testing testFindAll...
+2020-03-20 01:44:38.367 INFO  EventoServiceTest.testFindAll:25 - Testing testFindAll...
+2020-03-20 01:44:50.425 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:44:50.425 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:44:51.074 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 6 resultados
+2020-03-20 01:44:51.074 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 6 resultados
+2020-03-20 01:44:51.079 INFO  EventoServiceTest.testFindAll:32 - testFindAll done!
+2020-03-20 01:44:51.079 INFO  EventoServiceTest.testFindAll:32 - testFindAll done!
+2020-03-20 01:44:51.080 INFO  EventoServiceTest.testFindById:38 - Testing findById...
+2020-03-20 01:44:51.080 INFO  EventoServiceTest.testFindById:38 - Testing findById...
+2020-03-20 01:44:51.231 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:44:51.231 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
+2020-03-20 01:44:51.478 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:44:51.478 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:44:51.563 INFO  EventoServiceTest.testFindById:41 - findById done!
+2020-03-20 01:44:51.563 INFO  EventoServiceTest.testFindById:41 - findById done!
+2020-03-20 01:44:51.564 INFO  EventoServiceTest.testFindByTipo:46 - Testing testFindByTipo...
+2020-03-20 01:44:51.564 INFO  EventoServiceTest.testFindByTipo:46 - Testing testFindByTipo...
+2020-03-20 01:44:51.894 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:44:51.894 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:44:51.902 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:44:51.902 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:44:51.905 INFO  EventoServiceTest.testFindByTipo:53 - testFindByTipo done!
+2020-03-20 01:44:51.905 INFO  EventoServiceTest.testFindByTipo:53 - testFindByTipo done!
+2020-03-20 01:44:51.906 INFO  EventoServiceTest.testFindByLocalidad:57 - Testing testFindByLocalidad...
+2020-03-20 01:44:51.906 INFO  EventoServiceTest.testFindByLocalidad:57 - Testing testFindByLocalidad...
+2020-03-20 01:44:52.170 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:44:52.170 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-20 01:44:52.196 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:44:52.196 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 1 resultados
+2020-03-20 01:44:52.198 INFO  EventoServiceTest.testFindByLocalidad:64 - testFindByLocalidad done!
+2020-03-20 01:44:52.198 INFO  EventoServiceTest.testFindByLocalidad:64 - testFindByLocalidad done!
+2020-03-20 01:44:52.199 INFO  EventoServiceTest.testFindByValoracionMin:107 - Testing testFindByValoracionMin...
+2020-03-20 01:44:52.199 INFO  EventoServiceTest.testFindByValoracionMin:107 - Testing testFindByValoracionMin...
+2020-03-20 01:44:52.385 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO  HAVING AVG(v.puntuacion) >= ? 
+2020-03-20 01:44:52.385 INFO  EventoDaoImpl.findByCriteria:126 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO  HAVING AVG(v.puntuacion) >= ? 
+2020-03-20 01:44:52.425 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 2 resultados
+2020-03-20 01:44:52.425 INFO  EventoDaoImpl.findByCriteria:174 - Encontrados 2 resultados
+2020-03-20 01:44:52.441 INFO  EventoServiceTest.testFindByValoracionMin:114 - testFindByValoracionMin done!
+2020-03-20 01:44:52.441 INFO  EventoServiceTest.testFindByValoracionMin:114 - testFindByValoracionMin done!

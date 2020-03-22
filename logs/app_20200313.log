@@ -1,0 +1,26 @@
+2020-03-13 10:53:58.043 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-13 10:53:58.043 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-13 11:01:18.661 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-13 11:01:18.661 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-13 11:12:42.268 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-13 11:12:42.268 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-13 12:24:13.045 FATAL EventoDaoImpl.findByCriteria:100 - llegamos ad
+2020-03-13 12:24:13.045 FATAL EventoDaoImpl.findByCriteria:100 - llegamos ad
+2020-03-13 12:24:13.076 FATAL EventoDaoImpl.findByCriteria:102 - llegamos c
+2020-03-13 12:24:13.076 FATAL EventoDaoImpl.findByCriteria:102 - llegamos c
+2020-03-13 12:24:13.078 INFO  EventoDaoImpl.findByCriteria:114 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v.PUNTUACION  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ? 
+2020-03-13 12:24:13.078 INFO  EventoDaoImpl.findByCriteria:114 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v.PUNTUACION  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ? 
+2020-03-13 12:24:14.266 FATAL EventoDaoImpl.findByCriteria:155 - no ah ido bien la query :
+2020-03-13 12:24:14.266 FATAL EventoDaoImpl.findByCriteria:155 - no ah ido bien la query :
+2020-03-13 12:38:05.163 FATAL EventoDaoImpl.findByCriteria:101 - llegamos ad
+2020-03-13 12:38:05.163 FATAL EventoDaoImpl.findByCriteria:101 - llegamos ad
+2020-03-13 12:38:05.193 FATAL EventoDaoImpl.findByCriteria:103 - llegamos c
+2020-03-13 12:38:05.193 FATAL EventoDaoImpl.findByCriteria:103 - llegamos c
+2020-03-13 12:38:05.194 INFO  EventoDaoImpl.findByCriteria:115 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v.PUNTUACION  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ? 
+2020-03-13 12:38:05.194 INFO  EventoDaoImpl.findByCriteria:115 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v.PUNTUACION  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ? 
+2020-03-13 13:18:44.242 FATAL EventoDaoImpl.findByCriteria:101 - llegamos ad
+2020-03-13 13:18:44.242 FATAL EventoDaoImpl.findByCriteria:101 - llegamos ad
+2020-03-13 13:18:44.317 FATAL EventoDaoImpl.findByCriteria:103 - llegamos c
+2020-03-13 13:18:44.317 FATAL EventoDaoImpl.findByCriteria:103 - llegamos c
+2020-03-13 13:18:44.319 INFO  EventoDaoImpl.findByCriteria:115 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v.PUNTUACION  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ? 
+2020-03-13 13:18:44.319 INFO  EventoDaoImpl.findByCriteria:115 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,e.ID_LOCALIDAD,v.PUNTUACION  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO WHERE  te.ID_TIPO_EVENTO = ? 

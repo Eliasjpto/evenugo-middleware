@@ -10,13 +10,16 @@ public class Evento {
 	private String nombre = null;
 	private String descripcion = null;
 	private long idLocalidad;
+	private String nombreLocalidad;	
 	private Date fecha;
 	private int aforo=0;
 	private double precio=0.0;
+	private double valoracionMedia = 0.0d;
 
 	public Evento() {
 	}
 
+	
 	public Evento(long pK, long idTipoEvento, long idPromotor, String direccion, String nombre, String descripcion,
 			long idLocalidad, Date fecha, int aforo, double precio) {
 		super();
@@ -112,10 +115,18 @@ public class Evento {
 		this.precio = precio;
 	}
 
+	public double getValoracionMedia() {
+		return valoracionMedia;
+	}
+
+	public void setValoracionMedia(double valoracionMedia) {
+		this.valoracionMedia = valoracionMedia;
+	}
+
 	@Override
 	public String toString() {
 		return "Evento [PK=" + PK + ", idTipoEvento=" + idTipoEvento + ", idPromotor=" + idPromotor + ", direccion="
 				+ direccion + ", nombre=" + nombre + ", descripcion=" + descripcion + ", idLocalidad=" + idLocalidad
-				+ ", fecha=" + fecha + ", aforo=" + aforo + ", precio=" + precio + "]";
+				+ ", fecha=" + fecha + ", aforo=" + aforo + ", precio=" + precio + ", valoracionMedia = "+valoracionMedia+"]";
 	}
 }

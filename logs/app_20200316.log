@@ -1,0 +1,20 @@
+2020-03-16 06:32:55.600 INFO  EventoDaoImpl.findById:51 - aviso
+2020-03-16 06:32:55.600 INFO  EventoDaoImpl.findById:51 - aviso
+2020-03-16 06:51:23.894 INFO  EventoDaoImpl.findById:51 - aviso
+2020-03-16 06:51:23.894 INFO  EventoDaoImpl.findById:51 - aviso
+2020-03-16 07:07:35.488 INFO  EventoDaoImpl.findByCriteria:117 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,AVG(v.PUNTUACION)  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO 
+2020-03-16 07:07:35.488 INFO  EventoDaoImpl.findByCriteria:117 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,AVG(v.PUNTUACION)  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO 
+2020-03-16 07:07:35.749 FATAL EventoDaoImpl.findByCriteria:158 - no ah ido bien la query :
+2020-03-16 07:07:35.749 FATAL EventoDaoImpl.findByCriteria:158 - no ah ido bien la query :
+2020-03-16 07:13:05.744 INFO  EventoDaoImpl.findByCriteria:121 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,AVG(v.PUNTUACION)  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO 
+2020-03-16 07:13:05.744 INFO  EventoDaoImpl.findByCriteria:121 - resultado de la consulta :select ei.NOMBRE, e.ID_EVENTO,e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,e.ID_LOCALIDAD,e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA,AVG(v.PUNTUACION)  from evento e  INNER JOIN   evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN   valoracion v  ON v.ID_EVENTO = e.ID_EVENTO 
+2020-03-16 07:13:05.852 FATAL EventoDaoImpl.findByCriteria:162 - no ah ido bien la query :
+2020-03-16 07:13:05.852 FATAL EventoDaoImpl.findByCriteria:162 - no ah ido bien la query :
+2020-03-16 07:23:51.374 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-16 07:23:51.374 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-16 07:29:03.125 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-16 07:29:03.125 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-16 07:34:20.482 INFO  EventoDaoImpl.findById:51 - aviso
+2020-03-16 07:34:20.482 INFO  EventoDaoImpl.findById:51 - aviso
+2020-03-16 07:35:57.124 INFO  EventoDaoImpl.findById:50 - aviso
+2020-03-16 07:35:57.124 INFO  EventoDaoImpl.findById:50 - aviso
