@@ -1,172 +1,76 @@
-2020-03-21 12:43:58.302 INFO  EventoServiceTest.testFindAll:25 - Testing testFindAll...
-2020-03-21 12:43:58.302 INFO  EventoServiceTest.testFindAll:25 - Testing testFindAll...
-2020-03-21 12:44:19.421 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:19.421 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:19.422 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:19.422 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:19.428 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:19.428 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:19.429 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:19.429 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:26.746 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 6 resultados
-2020-03-21 12:44:26.746 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 6 resultados
-2020-03-21 12:44:26.760 INFO  EventoServiceTest.testFindAll:32 - testFindAll done!
-2020-03-21 12:44:26.760 INFO  EventoServiceTest.testFindAll:32 - testFindAll done!
-2020-03-21 12:44:26.762 INFO  EventoServiceTest.testFindById:38 - Testing findById...
-2020-03-21 12:44:26.762 INFO  EventoServiceTest.testFindById:38 - Testing findById...
-2020-03-21 12:44:27.017 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
-2020-03-21 12:44:27.017 DEBUG EventoDaoImpl.findById:28 - findById 8 ENG
-2020-03-21 12:44:27.267 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:27.267 INFO  EventoDaoImpl.findById:49 - select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  where e.ID_EVENTO = ? and ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:27.301 INFO  EventoServiceTest.testFindById:41 - findById done!
-2020-03-21 12:44:27.301 INFO  EventoServiceTest.testFindById:41 - findById done!
-2020-03-21 12:44:27.302 INFO  EventoServiceTest.testFindByTipo:46 - Testing testFindByTipo...
-2020-03-21 12:44:27.302 INFO  EventoServiceTest.testFindByTipo:46 - Testing testFindByTipo...
-2020-03-21 12:44:27.643 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:27.643 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:27.645 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:27.645 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:27.646 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:27.646 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:27.647 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:27.647 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:27.882 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:44:27.882 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:44:27.884 INFO  EventoServiceTest.testFindByTipo:53 - testFindByTipo done!
-2020-03-21 12:44:27.884 INFO  EventoServiceTest.testFindByTipo:53 - testFindByTipo done!
-2020-03-21 12:44:27.885 INFO  EventoServiceTest.testFindByLocalidad:57 - Testing testFindByLocalidad...
-2020-03-21 12:44:27.885 INFO  EventoServiceTest.testFindByLocalidad:57 - Testing testFindByLocalidad...
-2020-03-21 12:44:28.491 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:28.491 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:28.491 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:28.491 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:28.492 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:28.492 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:28.493 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:28.493 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:28.510 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:44:28.510 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:44:28.515 INFO  EventoServiceTest.testFindByLocalidad:64 - testFindByLocalidad done!
-2020-03-21 12:44:28.515 INFO  EventoServiceTest.testFindByLocalidad:64 - testFindByLocalidad done!
-2020-03-21 12:44:28.516 INFO  EventoServiceTest.testFindByValoracionMin:107 - Testing testFindByValoracionMin...
-2020-03-21 12:44:28.516 INFO  EventoServiceTest.testFindByValoracionMin:107 - Testing testFindByValoracionMin...
-2020-03-21 12:44:28.845 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:28.845 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:28.846 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:28.846 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:28.848 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:28.848 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:28.849 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO  HAVING AVG(v.puntuacion) >= ? 
-2020-03-21 12:44:28.849 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO  HAVING AVG(v.puntuacion) >= ? 
-2020-03-21 12:44:28.915 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 2 resultados
-2020-03-21 12:44:28.915 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 2 resultados
-2020-03-21 12:44:28.919 INFO  EventoServiceTest.testFindByValoracionMin:114 - testFindByValoracionMin done!
-2020-03-21 12:44:28.919 INFO  EventoServiceTest.testFindByValoracionMin:114 - testFindByValoracionMin done!
-2020-03-21 12:44:29.482 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:29.482 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:29.484 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:29.484 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:29.485 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:29.485 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:29.486 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:29.486 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:29.489 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
-2020-03-21 12:44:29.489 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
-2020-03-21 12:44:29.564 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:44:29.564 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:44:29.945 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:29.945 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:29.946 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:29.946 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:29.946 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:29.946 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:29.947 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.FECHA_HORA  >= ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:29.947 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.FECHA_HORA  >= ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:29.989 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 7 resultados
-2020-03-21 12:44:29.989 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 7 resultados
-2020-03-21 12:44:30.000 INFO  EventoServiceTest.testFindByTipo:46 - Testing testFindByTipo...
-2020-03-21 12:44:30.000 INFO  EventoServiceTest.testFindByTipo:46 - Testing testFindByTipo...
-2020-03-21 12:44:30.761 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:30.761 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:44:30.762 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:30.762 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:44:30.762 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:30.762 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:44:30.763 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:30.763 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  INNER JOIN   tipo_evento te ON te.ID_TIPO_EVENTO = e.ID_TIPO_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  te.ID_TIPO_EVENTO = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:44:31.068 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:44:31.068 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:44:31.070 INFO  EventoServiceTest.testFindByTipo:53 - testFindByTipo done!
-2020-03-21 12:44:31.070 INFO  EventoServiceTest.testFindByTipo:53 - testFindByTipo done!
-2020-03-21 12:47:25.142 INFO  EventoServiceTest.testFindAll:25 - Testing testFindAll...
-2020-03-21 12:47:25.142 INFO  EventoServiceTest.testFindAll:25 - Testing testFindAll...
-2020-03-21 12:47:44.346 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:47:44.346 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:47:44.347 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:47:44.347 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:47:44.350 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:47:44.350 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:47:44.352 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:47:44.352 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:47:45.508 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 6 resultados
-2020-03-21 12:47:45.508 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 6 resultados
-2020-03-21 12:47:45.519 INFO  EventoServiceTest.testFindAll:32 - testFindAll done!
-2020-03-21 12:47:45.519 INFO  EventoServiceTest.testFindAll:32 - testFindAll done!
-2020-03-21 12:47:46.058 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:47:46.058 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:47:46.059 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:47:46.059 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:47:46.060 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:47:46.060 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:47:46.060 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
-2020-03-21 12:47:46.060 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
-2020-03-21 12:47:46.062 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
-2020-03-21 12:47:46.062 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
-2020-03-21 12:47:46.073 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:47:46.073 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:47:46.501 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:47:46.501 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:47:46.502 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:47:46.502 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:47:46.503 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:47:46.503 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:47:46.503 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.FECHA_HORA  >= ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:47:46.503 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.FECHA_HORA  >= ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:47:46.537 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 7 resultados
-2020-03-21 12:47:46.537 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 7 resultados
-2020-03-21 12:49:01.601 INFO  EventoServiceTest.testFindAll:25 - Testing testFindAll...
-2020-03-21 12:49:01.601 INFO  EventoServiceTest.testFindAll:25 - Testing testFindAll...
-2020-03-21 12:49:06.777 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:49:06.777 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:49:06.779 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:49:06.779 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:49:06.780 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:49:06.780 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:49:06.781 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:49:06.781 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:49:07.060 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 6 resultados
-2020-03-21 12:49:07.060 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 6 resultados
-2020-03-21 12:49:07.072 INFO  EventoServiceTest.testFindAll:32 - testFindAll done!
-2020-03-21 12:49:07.072 INFO  EventoServiceTest.testFindAll:32 - testFindAll done!
-2020-03-21 12:49:07.950 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:49:07.950 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:49:07.951 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:49:07.951 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:49:07.952 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:49:07.952 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:49:07.952 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
-2020-03-21 12:49:07.952 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
-2020-03-21 12:49:07.954 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
-2020-03-21 12:49:07.954 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
-2020-03-21 12:49:07.967 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:49:07.967 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
-2020-03-21 12:49:08.488 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:49:08.488 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
-2020-03-21 12:49:08.489 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:49:08.489 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
-2020-03-21 12:49:08.489 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:49:08.489 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
-2020-03-21 12:49:08.490 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.FECHA_HORA  >= ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:49:08.490 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.FECHA_HORA  >= ?  GROUP BY e.ID_EVENTO 
-2020-03-21 12:49:08.508 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 7 resultados
-2020-03-21 12:49:08.508 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 7 resultados
+2020-03-23 21:02:41.274 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:02:41.274 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:02:41.369 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:02:41.369 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:02:41.370 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:02:41.370 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:02:41.372 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
+2020-03-23 21:02:41.372 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
+2020-03-23 21:02:41.504 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
+2020-03-23 21:02:41.504 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
+2020-03-23 21:02:42.428 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
+2020-03-23 21:02:42.428 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
+2020-03-23 21:18:00.302 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:18:00.302 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:18:00.318 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:18:00.318 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:18:00.320 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:18:00.320 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:18:00.320 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
+2020-03-23 21:18:00.320 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION,ei.ID_IDIOMA AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
+2020-03-23 21:18:00.398 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
+2020-03-23 21:18:00.398 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
+2020-03-23 21:18:00.617 FATAL EventoDaoImpl.findByCriteria:173 - no ah ido bien la query :
+2020-03-23 21:18:00.617 FATAL EventoDaoImpl.findByCriteria:173 - no ah ido bien la query :
+2020-03-23 21:24:46.597 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:24:46.597 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:24:46.615 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:24:46.615 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:24:46.616 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:24:46.616 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:24:46.617 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
+2020-03-23 21:24:46.617 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
+2020-03-23 21:24:46.715 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
+2020-03-23 21:24:46.715 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
+2020-03-23 21:24:46.782 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
+2020-03-23 21:24:46.782 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
+2020-03-23 21:26:48.891 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:26:48.891 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:26:48.908 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:26:48.908 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:26:48.909 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:26:48.909 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:26:48.910 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
+2020-03-23 21:26:48.910 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
+2020-03-23 21:26:48.992 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
+2020-03-23 21:26:48.992 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
+2020-03-23 21:26:49.059 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
+2020-03-23 21:26:49.059 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
+2020-03-23 21:29:38.540 INFO  EventoServiceTest.testFindByNombre:68 - Testing testFindByNombre...
+2020-03-23 21:29:38.540 INFO  EventoServiceTest.testFindByNombre:68 - Testing testFindByNombre...
+2020-03-23 21:29:54.271 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:29:54.271 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:29:54.272 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:29:54.272 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:29:54.272 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:29:54.272 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:29:54.273 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
+2020-03-23 21:29:54.273 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  UPPER(ei.NOMBRE) LIKE UPPER (?)  GROUP BY e.ID_EVENTO 
+2020-03-23 21:29:54.583 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
+2020-03-23 21:29:54.583 FATAL EventoDaoImpl.findByCriteria:153 - llegamos
+2020-03-23 21:29:55.013 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
+2020-03-23 21:29:55.013 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
+2020-03-23 21:34:03.096 INFO  EventoServiceTest.testFindByLocalidad:57 - Testing testFindByLocalidad...
+2020-03-23 21:34:03.096 INFO  EventoServiceTest.testFindByLocalidad:57 - Testing testFindByLocalidad...
+2020-03-23 21:34:07.775 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:34:07.775 FATAL EventoDaoImpl.findByCriteria:106 - llegamos c
+2020-03-23 21:34:07.776 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:34:07.776 FATAL EventoDaoImpl.findByCriteria:108 - llegamos c
+2020-03-23 21:34:07.777 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:34:07.777 FATAL EventoDaoImpl.findByCriteria:110 - llegamos c
+2020-03-23 21:34:07.779 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-23 21:34:07.779 INFO  EventoDaoImpl.findByCriteria:122 - Consulta compuesta en base al criteria:select ei.NOMBRE, e.ID_EVENTO, e.FECHA_HORA,e.ID_TIPO_EVENTO,e.ID_PROMOTOR,  e.ID_LOCALIDAD, e.AFOROTOTAL,e.DIRECCION,ei.DESCRIPCION, AVG(v.PUNTUACION)  from evento e INNER JOIN  evento_idioma ei ON ei.ID_EVENTO = e.ID_EVENTO  INNER JOIN  valoracion v  ON v.ID_EVENTO = e.ID_EVENTO  WHERE ei.ID_IDIOMA = ?  AND  e.ID_LOCALIDAD = ?  GROUP BY e.ID_EVENTO 
+2020-03-23 21:34:09.043 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
+2020-03-23 21:34:09.043 INFO  EventoDaoImpl.findByCriteria:170 - Encontrados 1 resultados
+2020-03-23 21:34:09.050 INFO  EventoServiceTest.testFindByLocalidad:64 - testFindByLocalidad done!
+2020-03-23 21:34:09.050 INFO  EventoServiceTest.testFindByLocalidad:64 - testFindByLocalidad done!

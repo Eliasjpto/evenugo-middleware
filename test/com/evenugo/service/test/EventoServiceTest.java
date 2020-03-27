@@ -65,9 +65,10 @@ public class EventoServiceTest {
 	}
 	
 	public void testFindByNombre() throws DataException {
+		logger.info("Testing testFindByNombre...");
 		EventoCriteria c = new EventoCriteria();
 		c.setNombre("Ros");
-		List<Evento>results = eventoService.findByCriteria(c, "ESP");	
+		List<Evento>results = eventoService.findByCriteria(c, "ENG");	
 		for (Evento e: results) {
 			System.out.println(e);
 		}
@@ -121,10 +122,10 @@ public class EventoServiceTest {
 		//	test.testFindAll();
 	//		test.testFindById();
 	//		test.testFindByTipo();
-	//		test.testFindByLocalidad();
+			test.testFindByLocalidad();
 	//		test.testFindByValoracionMin();
-			 test.testFindByNombre();
-			test.testFindByFechaDesde(); 
+	//		 test.testFindByNombre();
+	//		test.testFindByFechaDesde(); 
 	//		test.testFindByTipo();
 		} catch (DataException de) {
 			de.printStackTrace();
